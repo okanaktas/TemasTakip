@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".InfoActivity" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#2196F3"
+            android:orientation="horizontal">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textViewInfoGeri"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:text="Geri"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="Bu Uygulama Hakkında"
+                    android:textColor="#FFFFFF"
+                    android:textSize="16sp" />
+            </TableRow>
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bu uygulama korona virüs (COVİD-19) aşı durumunuzu içermiyor"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/textView9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bu Uygulama gizliliğinizi ve kimliğinizi korur. Kim olduğunuzu bilmez ve tıbbi kayıtlarınza bağlantı içermez." />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bu uygulama, kendizi ve başkalarını korumanıza yardımcı olmak üzere temas takibi teknolojisini kullanmaktadır. Bu şekilde hepimiz sevdiğimiz şeyleri yapmaya geri dönebiliriz." />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Covid-19 Hakkında:"
+                        android:textStyle="bold" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Belirtileri Nelerdir? Belirtisiz olgular olabileceği bildirilmekle birlikte, bunların oranı bilinmemektedir. En çok karşılaşılan belirtiler ateş, öksürük ve nefes darlığıdır. Şiddetli olgularda zatürre, ağır solunum yetmezliği, böbrek yetmezliği ve ölüm gelişebilmektedir.  Nasıl Bulaşır? Hasta bireylerin öksürmeleri aksırmaları ile ortama saçılan damlacıkların solunması ile bulaşır. Hastaların solunum parçacıkları ile kirlenmiş yüzeylere dokunulduktan sonra ellerin yıkanmadan yüz, göz, burun veya ağıza götürülmesi ile de virüs alınabilir. Kirli ellerle göz, burun veya ağıza temas etmek risklidir.  Kimler Daha Fazla Risk Altında? COVID-19 enfeksiyonu ile ilgili şimdiye kadar edinilen bilgiler, bazı insanların daha fazla hastalanma ve ciddi semptomlar geliştirme riski altında olduğunu göstermiştir.  - Vakaların yüzde 80'i hastalığı hafif geçirmektedir. - Vakaların %20’si hastane koşullarında tedavi edilmektedir. - Hastalık, genellikle 60 yaş ve üzerindeki kişileri daha fazla etkilemektedir.  Hastalıktan En Çok Etkilenen Kişiler: - 60 yaş üstü olanlar - Ciddi kronik tıbbi rahatsızlıkları olan insanlar: - Kalp hastalığı - Hipertansiyon - Diyabet - Kronik Solunum yolu hastalığı - Kanser gibi - Sağlık Çalışanları  Çocuklar Risk Altında Mı? Çocuklarda hastalık nadir ve hafif görünmektedir.  Çocuklarda şimdiye kadar ölüm görülmemiştir. Versiyon 1.0" />
+                </TableRow>
+            </TableLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

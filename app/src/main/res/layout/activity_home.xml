@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f5f5f5"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/textViewTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center"
+                android:text="Covid19 - Tracking System"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:gravity="center">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="#FFFFFF"
+                    android:gravity="center|left"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/imageViewCheck"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginLeft="30dp"
+                        app:srcCompat="@drawable/thermometer" />
+
+                    <TextView
+                        android:id="@+id/textViewCheck"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginLeft="40dp"
+                        android:gravity="center"
+                        android:text="Belirtileri Kontrol Edin" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="#FFFFFF"
+                    android:gravity="center|left"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/imageViewTracing"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginLeft="30dp"
+                        app:srcCompat="@drawable/scan" />
+
+                    <TextView
+                        android:id="@+id/textViewTracing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginLeft="40dp"
+                        android:gravity="center"
+                        android:text="Temas Takibini Yönet" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="#FFFFFF"
+                    android:gravity="center|left"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/imageViewInfo"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginLeft="30dp"
+                        app:srcCompat="@drawable/info" />
+
+                    <TextView
+                        android:id="@+id/textViewInfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginLeft="40dp"
+                        android:gravity="center"
+                        android:text="Bu Uygulama Hakkında" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:background="#FFFFFF"
+                    android:gravity="center|left"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/imageViewSettings"
+                        android:layout_width="25dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginLeft="30dp"
+                        app:srcCompat="@drawable/settings" />
+
+                    <TextView
+                        android:id="@+id/textViewSettings"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginLeft="40dp"
+                        android:gravity="center"
+                        android:text="Ayarlar" />
+
+                </TableRow>
+
+            </TableLayout>
+        </ScrollView>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="bottom|center">
+
+            <TextView
+                android:id="@+id/textViewUnderText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:gravity="center"
+                android:text="Tüm hakları Saklıdır." />
+        </TableRow>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
